@@ -1,0 +1,104 @@
+{% extends 'base.html' %} {% load static%} {% block title %}{{ title
+}}{%endblock %} {% block content %} {% load i18n %}
+<main>
+  <div class="loader-container">
+    <div class="loader">
+      <div class="loader-inner"></div>
+    </div>
+  </div>
+  <!-- Form content start -->
+  <form method="post" action="{% url 'submit_form' %}">
+          
+    {% csrf_token %}
+    <div class="form-group">
+      <style>
+        ::placeholder {
+          font-weight: bold;
+        }
+      </style>
+      
+      <label for="name" >{% trans 'Adınız' %}:</label>
+      <input type="text" id="name" name="name" placeholder="{% trans 'Orxan' %}" required class="animated-input" oninput="validateInput(this)" />
+    </div>
+    <div class="form-group">
+      <label for="surname">{% trans 'Soyadınız' %}:</label>
+      <input type="text" id="surname" name="surname" placeholder="{% trans 'Kərimov' %}" required class="animated-input" oninput="validateInput(this)" />
+    </div>
+    <div class="form-group">
+      <label for="gender">{% trans 'Cins' %}:</label>
+      <select id="gender" name="gender">
+        <option value="">{% trans 'Seçim' %}--</option>
+        <option value="male">{% trans 'Kişi' %}</option>
+        <option value="female">{% trans 'Qadın' %}</option>
+        <option value="other">{% trans 'Digər' %}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="age">{% trans 'Yaş' %}:</label>
+      <select id="age" name="age">
+        <option value="">{% trans 'Seçim' %}--</option>
+        <option value="12-18">12-18</option>
+        <option value="18-25">18-25</option>
+        <option value="25-35">25-35</option>
+        <option value="35-50">35-50</option>
+        <option value="more-than-50">{% trans 'more than 50' %}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="email">{% trans 'Email' %}:</label>
+      <input type="email" id="email" name="email" placeholder="{% trans 'orxan@mail.com' %}" required class="animated-input" oninput="validateInput(this)" />
+    </div>
+    <div class="form-group">
+      <label for="mobile">{% trans 'Telefon nömrəsi' %}:</label>
+      <div class="mobile-input-group">
+        <select id="operator-code" name="operator-code">
+          <option value="">{% trans 'Seçim' %}--</option>
+          <option value="050">050</option>
+          <option value="051">051</option>
+          <option value="055">055</option>
+          <option value="099">099</option>
+          <option value="070">070</option>
+          <option value="077">077</option>
+        </select>
+        <input type="text" id="mobile-number" name="mobile-number" maxlength="7" placeholder="XXX XX XX" required class="animated-input" oninput="validateInputNumber(this)" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="location">{% trans 'Ticarət mərkəzi' %}:</label>
+      <select id="location" name="location">
+        <option value="">{% trans 'Seçim' %}--</option>
+        {% for mall in malls %}
+        <option value="{{ mall.id }}">{{ mall.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="store">{% trans 'Mağaza' %}:</label>
+      <select id="store" name="store">
+        <option value="">{% trans 'Seçim' %}--</option>
+        {% for brand in brands %}
+        <option value="{{ brand.id }}">{{ brand.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="comments">{% trans 'Şərhlər' %}:</label>
+      <textarea id="comments" name="comments" rows="15"></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit-btn">{% trans 'Göndər' %}</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+      button:disabled {
+        background-color: #dddddd; 
+        cursor: not-allowed;
+      }
+    </style>
+    
+      
+  </form>
+  <!-- Form content end -->
+</main>
+{% endblock %}

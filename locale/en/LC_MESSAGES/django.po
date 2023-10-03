@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-12 19:42+0400\n"
+"PO-Revision-Date: 2023-06-12 23:47+0400\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: app/settings.py:117 templates/language.html:44
+msgid "Azerbaijani"
+msgstr "Azerbaijani"
+
+#: app/settings.py:118 templates/language.html:43
+msgid "English"
+msgstr "English"
+
+#: core/admin.py:23
+msgid "Operator Code"
+msgstr "Operator Code"
+
+#: core/admin.py:28
+msgid "050"
+msgstr "050"
+
+#: core/admin.py:29
+msgid "051"
+msgstr "051"
+
+#: core/admin.py:30
+msgid "055"
+msgstr "055"
+
+#: core/admin.py:31
+msgid "099"
+msgstr "099"
+
+#: core/admin.py:32
+msgid "070"
+msgstr "070"
+
+#: core/admin.py:33
+msgid "077"
+msgstr "077"
+
+#: templates/index.html:20
+msgid "Adınız"
+msgstr "Name"
+
+#: templates/index.html:21
+msgid "Orxan"
+msgstr "Olivia"
+
+#: templates/index.html:24
+msgid "Soyadınız"
+msgstr "Surname"
+
+#: templates/index.html:25
+msgid "Kərimov"
+msgstr "Taylor"
+
+#: templates/index.html:28
+msgid "Cins"
+msgstr "Gender"
+
+#: templates/index.html:30 templates/index.html:39 templates/index.html:55
+#: templates/index.html:69 templates/index.html:78
+msgid "Seçim"
+msgstr "Choose"
+
+#: templates/index.html:31
+msgid "Kişi"
+msgstr "Man"
+
+#: templates/index.html:32
+msgid "Qadın"
+msgstr "Woman"
+
+#: templates/index.html:33
+msgid "Digər"
+msgstr "Not prefer"
+
+#: templates/index.html:37
+msgid "Yaş"
+msgstr "Age"
+
+#: templates/index.html:44
+msgid "more than 50"
+msgstr "more than 50"
+
+#: templates/index.html:48
+msgid "Email"
+msgstr "Email"
+
+#: templates/index.html:49
+msgid "orxan@mail.com"
+msgstr "olivia@mail.com"
+
+#: templates/index.html:52
+msgid "Telefon nömrəsi"
+msgstr "Mobile number"
+
+#: templates/index.html:67
+msgid "Ticarət mərkəzi"
+msgstr "Shopping center"
+
+#: templates/index.html:76
+msgid "Mağaza"
+msgstr "Store"
+
+#: templates/index.html:85
+msgid "Şərhlər"
+msgstr "Comments"
+
+#: templates/index.html:89
+msgid "Göndər"
+msgstr "Submit"
+
+#: templates/language.html:39
+msgid "Welcome, Dear Customer."
+msgstr "Welcome, Dear Customer."
+
+#: templates/language.html:40
+msgid "Please select your language:"
+msgstr "Please select your language:"
+
+#: templates/partials/footer.html:5
+msgid "CENOMI Group Azərbaycan"
+msgstr "CENOMI Group Azerbaijan"
+
+#: templates/partials/footer.html:30
+msgid "Müəllif Hüququ Tennin | Bütün hüquqlar qorunur. |"
+msgstr "Copyright Tennin | All rights reserved. |"
+
+#: templates/success-submit.html:8
+msgid "CRM_AZE"
+msgstr "CRM_AZE"
+
+#: templates/success-submit.html:25
+msgid "Təşəkkür edirik!"
+msgstr "Təşəkkür edirik!"
+
+#: templates/success-submit.html:26
+msgid "Thank you!"
+msgstr "Thank you!"
+
+#~ msgid "dən böyük"
+#~ msgstr "more than "
+
+#~ msgid "əsas səhifəyə geri dön."
+#~ msgstr "return to main page"
+
+#~ msgid "Thanks for submitting"
+#~ msgstr "Thanks for submitting."
+
+#~ msgid "return to main page"
+#~ msgstr "return to main page"
+
+#~ msgid "return to English page"
+#~ msgstr "return to main page"

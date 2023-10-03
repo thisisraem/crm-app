@@ -1,0 +1,34 @@
+{% load i18n %} {% load static %}
+<!-- Footer content start -->
+<footer class="footer">
+  <div class="footer-content">
+    <h4>{% trans 'NOVCO GROUP OF COMPANIES' %}</h4>
+    <ul class="socials">
+      <li>
+        <a href="{{ settings.facebook }}" target="_blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+      </li>
+      <li>
+        <a href="{{ settings.instagram }}" target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </li>
+      <li>
+        <a href="{{ settings.linkedin }}" target="_blank"
+          ><i class="fa fa-linkedin-square"></i
+        ></a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>
+      | &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      {% trans 'Müəllif Hüququ Novco L.L.C | Bütün hüquqlar qorunur. | powered by Tennin |' %}
+    </p>
+  </div>
+</footer>
+<!-- Footer content end -->

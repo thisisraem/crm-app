@@ -1,0 +1,61 @@
+{% load static %}
+{% load i18n %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVCO CRM AZE</title>
+  <link rel="icon" href="static/img/novco_favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="{% static 'style/style2.css' %}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="loader-container">
+    <div class="loader">
+      <div class="loader-inner"></div>
+    </div>
+  </div>
+
+  
+   <div class="logo">
+        <a href="{% url 'language' %}">
+        <img src="{{ settings.logo.url }}"alt="{{ logo.name }}" />
+        </a>
+        <div class="glow" alt="glow"> </div>
+     </div>
+
+     <div class="container">
+      <div class="window">
+        <ul class="language-list">
+          <li>
+            <a href="{% url 'en' %}">
+              <img src="/static/img/eng.png" alt="{% trans 'English' %}">
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'az' %}">
+              <img src="/static/img/aze.png" alt="{% trans 'Azerbaijani' %}">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+  
+<script src="/static/js/language.js"></script>
+
+</body>
+
+</html>
